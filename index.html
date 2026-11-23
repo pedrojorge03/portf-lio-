@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Jorge Barreto Vieira · Customer Engineer</title>
+  <meta name="description" content="Portfólio de Pedro Jorge Barreto Vieira: Customer Engineer | Entrepreneur in Residence na Xertica.ai. Pré-vendas em cibersegurança, tecnologia e Inteligência Artificial.">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      try {
+        var t = localStorage.getItem("theme") || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        d.dataset.theme = t;
+        if (localStorage.getItem("lang") === "en") d.lang = "en";
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="nav" id="nav">
+    <a href="#inicio" class="nav__brand" aria-label="Pedro Jorge">PJ<span>.</span></a>
+    <nav aria-label="Principal">
+      <ul class="nav__links">
+        <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
+        <li><a href="#experiencia" data-i18n="nav.exp">Experiência</a></li>
+        <li><a href="#formacao" data-i18n="nav.edu">Formação</a></li>
+        <li><a href="#certificacoes" data-i18n="nav.certs">Certificações</a></li>
+        <li><a href="#ferramentas" data-i18n="nav.tools">Ferramentas</a></li>
+        <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="nav__controls">
+      <a class="icon-btn" href="https://www.linkedin.com/in/pedro-jorge-barreto-vieira-b5221627b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zm7 0h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1v5.35h-4v-4.75c0-1.13-.02-2.6-1.58-2.6-1.59 0-1.83 1.24-1.83 2.52v4.83h-4z"/></svg>
+      </a>
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Mudar idioma para inglês">
+        <span data-lang="pt">PT</span><span data-lang="en">EN</span>
+      </button>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Alternar tema claro/escuro">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.4 4.4l2.1 2.1M17.5 17.5l2.1 2.1M4.4 19.6l2.1-2.1M17.5 6.5l2.1-2.1" stroke-width="1.8" stroke-linecap="round" fill="none" stroke="currentColor"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <canvas class="hero__scene" id="scene3d" aria-hidden="true"></canvas>
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow" data-hero="fade" data-i18n="hero.eyebrow">Brasília · DF · Brasil</p>
+          <h1 class="hero__title" aria-label="Pedro Jorge Barreto Vieira">
+            <span class="line" data-split>Pedro Jorge</span>
+            <span class="line line--accent" data-split>Barreto Vieira</span>
+          </h1>
+          <p class="hero__role" data-hero="fade"><span>Customer Engineer</span><span class="sep" aria-hidden="true">|</span><span>Entrepreneur in Residence</span></p>
+          <p class="hero__lead" data-hero="fade" data-i18n="hero.lead">
+            Transformo a dor do cliente em uma solução sob medida, da descoberta à assinatura do contrato.
+          </p>
+          <div class="hero__actions" data-hero="fade">
+            <a class="btn btn--primary" href="assets/Pedro-Jorge-Barreto-Vieira-Curriculo.pdf" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="hero.download">Baixar currículo (PDF)</span>
+            </a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/pedro-jorge-barreto-vieira-b5221627b/" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zm7 0h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1v5.35h-4v-4.75c0-1.13-.02-2.6-1.58-2.6-1.59 0-1.83 1.24-1.83 2.52v4.83h-4z"/></svg>
+              LinkedIn
+            </a>
+            <a class="btn btn--link" href="#experiencia" data-i18n="hero.cta">Ver trajetória →</a>
+          </div>
+        </div>
+
+        <div class="hero__media" data-hero="photo">
+          <div class="portrait" data-tilt>
+            <img src="assets/pedro.jpeg" width="1179" height="1236" alt="Foto de Pedro Jorge Barreto Vieira" data-i18n-alt="hero.photoAlt">
+          </div>
+          <div class="portrait__badge">
+            <span class="pulse" aria-hidden="true"></span>
+            <span data-i18n="hero.badge">Atualmente na <strong>Xertica.ai</strong></span>
+          </div>
+        </div>
+      </div>
+      <a href="#sobre" class="scroll-hint" aria-label="Rolar para baixo"><span></span></a>
+    </section>
+
+    <!-- NÚMEROS -->
+    <section class="stats" aria-label="Resumo em números">
+      <div class="container stats__grid">
+        <div class="stat"><strong data-count="3" data-suffix="+">3+</strong><span data-i18n="stat.years">anos em vendas e pré-vendas</span></div>
+        <div class="stat"><strong data-count="4">4</strong><span data-i18n="stat.companies">empresas na trajetória</span></div>
+        <div class="stat"><strong data-count="8">8</strong><span data-i18n="stat.certs">certificações</span></div>
+        <div class="stat"><strong data-count="5">5</strong><span data-i18n="stat.methods">metodologias de vendas</span></div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <h2 class="section__title" data-reveal><span class="section__num">01</span><span data-i18n="about.title">Resumo profissional</span></h2>
+        <div class="about">
+          <p class="about__text" data-reveal data-i18n="about.text">
+            Profissional de pré-vendas formado em <strong>Comunicação Organizacional</strong> pela Universidade de Brasília (UnB),
+            com experiência em todo o ciclo de vendas, da prospecção à assinatura do contrato. Atuação com cibersegurança,
+            tecnologia, Inteligência Artificial, marketing e serviços B2B, com foco em entender a dor do cliente, desenhar
+            soluções sob medida e conduzir apresentações de proposta.
+          </p>
+          <ul class="chips" data-reveal-group>
+            <li data-i18n="chip.cyber">Cibersegurança</li>
+            <li data-i18n="chip.ai">Inteligência Artificial</li>
+            <li data-i18n="chip.tech">Tecnologia</li>
+            <li>Marketing</li>
+            <li data-i18n="chip.b2b">Serviços B2B</li>
+            <li data-i18n="chip.presales">Pré-vendas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section class="section section--alt" id="experiencia">
+      <div class="container">
+        <h2 class="section__title" data-reveal><span class="section__num">02</span><span data-i18n="exp.title">Experiência profissional</span></h2>
+
+        <div class="timeline" id="timeline">
+          <div class="timeline__line" aria-hidden="true"><span id="timelineFill"></span></div>
+
+          <article class="job" data-job>
+            <div class="job__dot job__dot--now" aria-hidden="true"></div>
+            <div class="job__card" data-tilt>
+              <header class="job__head">
+                <div>
+                  <p class="job__company">Xertica.ai</p>
+                  <h3 class="job__role">Customer Engineer | Entrepreneur in Residence</h3>
+                </div>
+                <span class="job__date job__date--now" data-i18n="job1.date">11/2026 – Atual</span>
+              </header>
+              <p class="job__intro" data-i18n="job1.intro">Integro o time de pré-vendas com atuação técnico-consultiva: entendo a fundo o cenário do cliente e transformo essa necessidade em uma solução específica para ele.</p>
+              <ul class="job__list">
+                <li data-i18n="job1.li1">Conduzo reuniões de descoberta para mapear dores, objetivos e contexto técnico do cliente.</li>
+                <li data-i18n="job1.li2">Desenho soluções personalizadas, alinhando a necessidade de negócio às tecnologias do portfólio.</li>
+                <li data-i18n="job1.li3">Construo e apresento a proposta ao cliente em reunião, conectando a solução ao valor gerado.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job" data-job>
+            <div class="job__dot" aria-hidden="true"></div>
+            <div class="job__card" data-tilt>
+              <header class="job__head">
+                <div>
+                  <p class="job__company" data-i18n="ngsx.company">NGSX · Segurança Cibernética</p>
+                  <h3 class="job__role" data-i18n="job2.role">Analista de Pré-vendas <small>(efetivado)</small></h3>
+                </div>
+                <span class="job__date">08/2025 – 11/2026</span>
+              </header>
+              <p class="job__intro" data-i18n="job2.intro">Efetivado após o estágio, assumi mais responsabilidade nos processos de pré-vendas.</p>
+              <ul class="job__list">
+                <li data-i18n="job2.li1">Prospecção e qualificação de potenciais clientes no setor de cibersegurança e desenvolvimento do pipeline.</li>
+                <li data-i18n="job2.li2">Abordagem de leads, agendamento de reuniões e apresentação das soluções da empresa.</li>
+                <li data-i18n="job2.li3">Follow-ups estratégicos para fortalecer o relacionamento e gerar oportunidades qualificadas.</li>
+                <li data-i18n="job2.li4">Gestão de leads, interações e pipeline no HubSpot e Spotter.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job" data-job>
+            <div class="job__dot" aria-hidden="true"></div>
+            <div class="job__card" data-tilt>
+              <header class="job__head">
+                <div>
+                  <p class="job__company" data-i18n="ngsx.company">NGSX · Segurança Cibernética</p>
+                  <h3 class="job__role" data-i18n="sdr.role">Sales Development Representative <small>(Estágio)</small></h3>
+                </div>
+                <span class="job__date">09/2024 – 07/2025</span>
+              </header>
+              <ul class="job__list">
+                <li data-i18n="job3.li1">Prospecção e qualificação de leads, abordagens comerciais e agendamento de reuniões.</li>
+                <li data-i18n="job3.li2">Apresentação inicial das soluções e follow-ups para reforçar a importância da segurança digital.</li>
+                <li data-i18n="job3.li3">Uso de CRM para organizar contatos, registrar interações e acompanhar oportunidades.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job" data-job>
+            <div class="job__dot" aria-hidden="true"></div>
+            <div class="job__card" data-tilt>
+              <header class="job__head">
+                <div>
+                  <p class="job__company" data-i18n="job4.company">Facto Agência de Comunicação · Empresa Júnior</p>
+                  <h3 class="job__role" data-i18n="job4.role">Consultor Comercial</h3>
+                </div>
+                <span class="job__date">08/2023 – 01/2025</span>
+              </header>
+              <ul class="job__list">
+                <li data-i18n="job4.li1">Prospecção ativa, qualificação de leads e agendamento de reuniões com potenciais clientes.</li>
+                <li data-i18n="job4.li2">Diagnóstico das necessidades do cliente e elaboração e apresentação de propostas personalizadas.</li>
+                <li data-i18n="job4.li3">Desenvolvimento de estratégias para ampliar a carteira de clientes e otimizar o processo de vendas.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job" data-job>
+            <div class="job__dot" aria-hidden="true"></div>
+            <div class="job__card" data-tilt>
+              <header class="job__head">
+                <div>
+                  <p class="job__company" data-i18n="job5.company">DHI Brasil · Clínica de Transplante Capilar</p>
+                  <h3 class="job__role" data-i18n="sdr.role">Sales Development Representative <small>(Estágio)</small></h3>
+                </div>
+                <span class="job__date">01/2024 – 07/2024</span>
+              </header>
+              <ul class="job__list">
+                <li data-i18n="job5.li1">Prospecção e qualificação de leads, contato inicial e agendamento de consultas e avaliações.</li>
+                <li data-i18n="job5.li2">Acompanhamento pós-transplante e suporte aos pacientes, com foco na satisfação do cliente.</li>
+                <li data-i18n="job5.li3">Gestão de leads no HubSpot e criação de conteúdo e campanhas no Instagram.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section class="section" id="formacao">
+      <div class="container">
+        <h2 class="section__title" data-reveal><span class="section__num">03</span><span data-i18n="edu.title">Formação acadêmica</span></h2>
+        <div class="cards cards--2" data-reveal-group>
+          <div class="card" data-tilt>
+            <span class="card__label">2023 – 2026</span>
+            <h3 data-i18n="edu1.title">Comunicação Organizacional</h3>
+            <p data-i18n="edu1.school">Universidade de Brasília (UnB)</p>
+          </div>
+          <div class="card" data-tilt>
+            <span class="card__label">2017 – 2022</span>
+            <h3 data-i18n="edu2.title">Inglês · curso avançado</h3>
+            <p>Casa Thomas Jefferson</p>
+          </div>
+          <div class="card" data-tilt>
+            <span class="card__label" data-i18n="edu3.date">04/2026 – Atual</span>
+            <h3 data-i18n="edu3.title">Inglês · conversação com nativos</h3>
+            <p>Preply</p>
+          </div>
+          <div class="card" data-tilt>
+            <span class="card__label">2020 – 2022</span>
+            <h3 data-i18n="edu4.title">Ensino Médio</h3>
+            <p>Colégio Marista de Brasília</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICAÇÕES -->
+    <section class="section section--alt" id="certificacoes">
+      <div class="container">
+        <h2 class="section__title" data-reveal><span class="section__num">04</span><span data-i18n="certs.title">Certificações</span></h2>
+        <div class="cards cards--3" data-reveal-group>
+          <div class="card card--cert" data-tilt><span class="card__label">Google Cloud</span><h3>Google Cloud Sales Credential</h3></div>
+          <div class="card card--cert" data-tilt><span class="card__label">Google</span><h3>Google Workspace Sales Credential</h3></div>
+          <div class="card card--cert" data-tilt><span class="card__label">Google</span><h3>Google for Education Sales Credential</h3></div>
+          <div class="card card--cert" data-tilt><span class="card__label">Google</span><h3>ChromeOS for Enterprise: Sales Credential</h3></div>
+          <div class="card card--cert" data-tilt><span class="card__label">Check Point Software</span><h3>Sales Specialist</h3></div>
+          <div class="card card--cert" data-tilt><span class="card__label">Axur</span><h3 data-i18n="cert.axur">Certificação Portfólio</h3></div>
+          <div class="card card--cert" data-tilt><span class="card__label">Keysight</span><h3>Xcelerate Sales Training</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FERRAMENTAS + METODOLOGIAS -->
+    <section class="section" id="ferramentas">
+      <div class="container">
+        <h2 class="section__title" data-reveal><span class="section__num">05</span><span data-i18n="tools.title">Ferramentas e plataformas</span></h2>
+        <div class="tools" data-reveal-group>
+          <div class="tool">
+            <h3>CRM</h3>
+            <ul class="chips"><li>HubSpot</li><li>Ploomes</li><li>Salesforce</li><li>RD Station</li><li>Spotter</li></ul>
+          </div>
+          <div class="tool">
+            <h3 data-i18n="tools.leads">Automação e enriquecimento de leads</h3>
+            <ul class="chips"><li>LinkedIn Sales Navigator</li><li>Woodpecker</li></ul>
+          </div>
+          <div class="tool">
+            <h3 data-i18n="tools.prospect">Prospecção e gestão comercial</h3>
+            <ul class="chips"><li>LinkedIn</li><li>WhatsApp Business</li><li>Google Workspace</li><li>Outlook</li></ul>
+          </div>
+          <div class="tool">
+            <h3 data-i18n="tools.slides">Apresentações e propostas</h3>
+            <ul class="chips"><li>Canva</li><li>Google Slides</li><li>PowerPoint</li></ul>
+          </div>
+          <div class="tool">
+            <h3 data-i18n="tools.sheets">Planilhas</h3>
+            <ul class="chips"><li>Microsoft Excel</li><li>Google Sheets</li></ul>
+          </div>
+        </div>
+
+        <h2 class="section__title section__title--sub" data-reveal><span class="section__num">06</span><span data-i18n="methods.title">Metodologias de vendas</span></h2>
+        <ul class="methods" data-reveal-group>
+          <li><strong>SPIN Selling</strong><span data-i18n="methods.spin">Entender necessidades e dores do cliente antes de apresentar a solução.</span></li>
+          <li><strong>Outbound 2.0</strong><span data-i18n="methods.outbound">Cadências de prospecção estruturadas para gerar reuniões qualificadas.</span></li>
+          <li><strong>Inside Sales</strong><span data-i18n="methods.inside">Vendas remotas com apresentações e fechamento online.</span></li>
+          <li><strong>BANT</strong><span data-i18n="methods.bant">Qualificação por Budget, Authority, Need e Timing, com base no perfil ideal de cliente.</span></li>
+          <li><strong>Customer-Centric Selling</strong><span data-i18n="methods.ccs">Abordagem focada no sucesso do cliente e na entrega de valor.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CLIENTES -->
+    <section class="section section--alt" id="clientes">
+      <div class="container">
+        <h2 class="section__title" data-reveal><span class="section__num">07</span><span data-i18n="clients.title">Perfis de clientes atendidos</span></h2>
+        <div class="cards cards--3" data-reveal-group>
+          <div class="card" data-tilt>
+            <h3>B2B</h3>
+            <p data-i18n="clients.b2b">Empresas de tecnologia, segurança cibernética, consultorias, startups, indústrias, agências de marketing, instituições de ensino, varejo, saúde, órgãos governamentais e bancos.</p>
+          </div>
+          <div class="card" data-tilt>
+            <h3>B2C</h3>
+            <p data-i18n="clients.b2c">Pequenos empresários, empreendedores digitais, profissionais autônomos e prestadores de serviços.</p>
+          </div>
+          <div class="card" data-tilt>
+            <h3 data-i18n="clients.sectorsTitle">Setores</h3>
+            <p data-i18n="clients.sectors">Tecnologia, segurança digital, comunicação, marketing, educação, saúde, varejo, indústria, serviços financeiros e setor público.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUEM É -->
+    <section class="section" id="quem-e">
+      <div class="container">
+        <h2 class="section__title" data-reveal><span class="section__num">08</span><span data-i18n="person.title">Quem é o Pedro Jorge?</span></h2>
+        <div class="person">
+          <p data-reveal data-i18n="person.text">
+            Sou apaixonado por esportes desde a infância. Joguei futebol dos 5 aos 10 anos e, de 2016 a 2022, representei minha escola
+            no handebol, sendo <strong>bicampeão estadual</strong> e ajudando o colégio a ser reconhecido duas vezes como o melhor do
+            estado na modalidade. Na universidade, voltei ao futebol e disputo diversas competições, além de treinar musculação.
+          </p>
+          <ul class="chips" data-reveal-group>
+            <li data-i18n="person.c1">Disciplina</li>
+            <li data-i18n="person.c2">Comprometimento</li>
+            <li data-i18n="person.c3">Perseverança</li>
+            <li data-i18n="person.c4">Trabalho em equipe</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section contact" id="contato">
+      <div class="container contact__inner">
+        <h2 class="contact__title" data-reveal data-i18n="contact.title">Vamos conversar?</h2>
+        <p class="contact__lead" data-reveal data-i18n="contact.lead">Se você tem um desafio e quer desenhar a solução certa para ele, me chame.</p>
+        <div class="contact__links">
+          <a class="btn btn--primary" href="mailto:pj.barretovieira@gmail.com">pj.barretovieira@gmail.com</a>
+          <a class="btn btn--ghost" href="tel:+5561985791818">(61) 98579-1818</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/pedro-jorge-barreto-vieira-b5221627b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Pedro Jorge Barreto Vieira · Brasília, DF</p>
+      <a href="assets/Pedro-Jorge-Barreto-Vieira-Curriculo.pdf" download data-i18n="footer.download">Baixar currículo (PDF)</a>
+    </div>
+  </footer>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/three.min.js"></script>
+  <script src="i18n.js"></script>
+  <script src="scene3d.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
